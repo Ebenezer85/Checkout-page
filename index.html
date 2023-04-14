@@ -7,74 +7,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CHECKOUT PAGE</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    
+
     <div id="flex-container">
         <div id="main-1">
             <h1>Checkout</h1>
             <div id="contact">
-            <h2>Contact Information</h2>
-            <form>
-                <label for="e-mail">E-mail</label><br>
-                <input type="text" name="email" placeholder="Enter your email..."><br><br>
-                <label for="phone">Phone</label><br>
-                <input type="number" name="phome" placeholder="Enter your phone...">
-            </form>
+                <h2>Contact Information</h2>
+                <form>
+                    <label for="e-mail">E-mail</label><br>
+                    <input type="text" name="email" placeholder="Enter your email..."><br><br>
+                    <label for="phone">Phone</label><br>
+                    <input type="number" name="phome" placeholder="Enter your phone...">
+                </form>
             </div>
-            
+
             <div id="address">
-            <h2>Shipping Address</h2>
-            <label for="name">Full Name</label><br>
-            <input type="text" name="name" placeholder="Rodney Cotton..."><br><br>
-            <label for="address">Address</label><br>
-            <input type="text" name="address" placeholder="Your address.."><br><br>
-            <label for="city">City</label><br>
-            <input type="text" name="city" placeholder="Your city..."><br><br>
-            <div id="last-row">
-                <div id="country"><label for="country">Country</label><br>
-                <select type="text" name="country" placeholder="Your country...">
-                    <option value="Nigeria"></option>
-                    <option value="Nigeria">Ghana</option>
-                    <option value="Nigeria">Nigeria</option>
-                </select><br><br>
+                <h2>Shipping Address</h2>
+                <label for="name">Full Name</label><br>
+                <input type="text" name="name" placeholder="Rodney Cotton..."><br><br>
+                <label for="address">Address</label><br>
+                <input type="text" name="address" placeholder="Your address.."><br><br>
+                <label for="city">City</label><br>
+                <input type="text" name="city" placeholder="Your city..."><br><br>
+                <div id="last-row">
+                    <div id="country"><label for="country">Country</label><br>
+                        <select type="text" name="country" placeholder="Your country...">
+                            <option value="Nigeria"></option>
+                            <option value="Nigeria">Ghana</option>
+                            <option value="Nigeria">Nigeria</option>
+                        </select><br><br>
+                    </div>
+                    <div id="postal-code"><label for="postalcode">Postal code</label><br>
+                        <input type="number" name="code" placeholder="Your postal code.."><br><br>
+                    </div>
                 </div>
-                <div id="postal-code"><label for="postalcode">Postal code</label><br>
-                <input type="number" name="code" placeholder="Your postal code.."><br><br>
-                </div>
-            </div>
-            
-            <input type="checkbox"> Save this information for next time
-            <button>continue</button>
+
+                <input type="checkbox"> Save this information for next time
+                <button class="continue">continue</button>
             </div>
         </div>
-        
+
         <div id="main-2">
-        <img src="/images/photo1.png" alt="bag pic">
-        <h4>vintage backbag</h4>
-        <h5>$54.99 $94.99</h5>
-        <button>- 1 +</button>
-        <img src="/images/photo2.png" alt="shoe pic">
-        <h4>levi shoes</h4>
-        <h5>$74.99 $124.99</h5>
-        <button>- 1 +</button>
-        <table>
-            <tr>
-                <th>Shipping</th>
-                <th>$19</th>
-            </tr>
-            <tr>
-                <td>Total</td>
-                <td>$148.98</td>
-            </tr>
-        </table>
-        <h6>shipping #19</h6>
-        <h6>total $148.98</h6>
+            <div class="parent">
+                <div>
+                    <img class="image" src="/images/photo1.png" alt="bag pic">
+                </div>
+                <div class="check-out">
+                    <p>Vintage Backbag</p>
+                    <p><Span class="price-1">$54.99</Span> <span class="price-2">$94.99</span></p>
+                    <div class="btns">
+                        <div class="negative"><button class="click"><p> - </p></button></div>
+                        <p class="one"> 1 </p>
+                        <div class="positive"><button> + </button></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="parent">
+                <div>
+                    <img class="image" src="/images/photo2.png" alt="shoe pic">
+                </div>
+                <div class="check-out">
+                    <p>Levi Shoes</p>
+                    <p><Span class="price-1">$74.99</Span> <span class="price-2">$124.99</span></p>
+                    <button class="btn">- 1 +</button>
+                </div>
+            </div>
+
+
+
+            <table>
+                <tr>
+                    <th>Shipping</th>
+                    <th>$19</th>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>$148.98</td>
+                </tr>
+            </table>
+            <h6>shipping #19</h6>
+            <h6>total $148.98</h6>
         </div>
-    
+
     </div>
-    
+
 
 
 
